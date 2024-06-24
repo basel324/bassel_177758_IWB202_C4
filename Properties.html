@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العقارات المتاحة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>شركة التسويق العقاري</h1>
+    </header>
+    <nav>
+        <a href="AboutUs.html">عن الشركة</a>
+        <a href="Properties.html">العقارات المتاحة</a>
+    </nav>
+    <main>
+    <h1>الشركة السورية للتسويق العقاري</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>المدينة</th>
+                <th>تفاصيل</th>
+                <th>الإيجار الشهري</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>  
+    </table>
+    <button id="continueBtn" style="display:none;">متابعة</button>
+    <form id="detailsForm" style="display:none;" onsubmit="return validateForm();">
+        <label for="fullName">الاسم الكامل:</label>
+        <input type="text" id="fullName" name="fullName">
+        
+        <label for="nationalId">الرقم الوطني:</label>
+        <input type="text" id="nationalId" name="nationalId">
+        
+        <label for="dob">تاريخ الولادة:</label>
+        <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy">
+        
+        <label for="phone">رقم الموبايل:</label>
+        <input type="text" id="phone" name="phone">
+        
+        <label for="email">الإيميل:</label>
+        <input type="text" id="email" name="email">
+        
+        <label for="captcha">أدخل الرمز:</label>
+        <input type="text" id="captchaInput" name="captcha">
+        <span id="captchaCode"></span>
+        <button type="submit">إرسال</button>
+    </form>
+</main>
+</body>
+</html>
+</body>
+</html>
